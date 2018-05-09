@@ -1,0 +1,1438 @@
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 37732 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c86b9e3: startup date [Fri May 04 14:39:03 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd9c0b3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1555 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c86b9e3: startup date [Fri May 04 14:39:03 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.055 seconds (JVM running for 5.957)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+HHH000397: Using ASTQueryTranslatorFactory
+redirectURI:"https://open.weixin.qq.com/connect/oauth2/authorize?appid\u003dwx00d5772bc0058d9b\u0026redirect_uri\u003dhttp%3A%2F%2F7dian.nat300.top%2Fsell%2Fwechat%2Fuserinfo\u0026response_type\u003dcode\u0026scope\u003dsnsapi_userinfo\u0026state\u003dhttp%3A%2F%2Fsell.com%2F%23%2F#wechat_redirect"
+进入userinfo……
+code:011tlTSu1LwUDc01d4Ru1qrdTu1tlTSq,returnUrl:http://sell.com/#/
+redirectURI:"https://open.weixin.qq.com/connect/oauth2/authorize?appid\u003dwx00d5772bc0058d9b\u0026redirect_uri\u003dhttp%3A%2F%2F7dian.nat300.top%2Fsell%2Fwechat%2Fuserinfo\u0026response_type\u003dcode\u0026scope\u003dsnsapi_userinfo\u0026state\u003dhttp%3A%2F%2Fsell.com%2F%23%2F#wechat_redirect"
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416192794635710",
+  "orderAmount": 0.01,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 payResponse={
+  "appId": "wx00d5772bc0058d9b",
+  "timeStamp": "1525416194",
+  "nonceStr": "sIGLlfGqnk0SCNU1",
+  "packAge": "prepay_id\u003dwx04144303378441769cbc64c52400398622",
+  "signType": "MD5",
+  "paySign": "5321CF7080964A968BC4193F7EDBB99B"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.01,
+  "orderId": "1525416192794635710",
+  "outTradeNo": "4200000155201805042274052252"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416192794635710",
+  "orderAmount": 0.01,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.03,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 payResponse={
+  "appId": "wx00d5772bc0058d9b",
+  "timeStamp": "1525416800",
+  "nonceStr": "iDyNObRp57hZRWul",
+  "packAge": "prepay_id\u003dwx04145310396636e3b087dcab3262918316",
+  "signType": "MD5",
+  "paySign": "17D374B784C9D01C11EED16BFA9215B2"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.02,
+  "orderId": "1525416800137231220",
+  "outTradeNo": "4200000149201805042503640957"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.03,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.03,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416928463440410",
+  "orderAmount": 0.05,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 payResponse={
+  "appId": "wx00d5772bc0058d9b",
+  "timeStamp": "1525416930",
+  "nonceStr": "nBQcZPNRByflyc8T",
+  "packAge": "prepay_id\u003dwx0414551985559992cc3aa4772219357923",
+  "signType": "MD5",
+  "paySign": "8F8802D0A699DFBC6688085D7C73C11B"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.05,
+  "orderId": "1525416928463440410",
+  "outTradeNo": "4200000140201805042555123930"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416928463440410",
+  "orderAmount": 0.05,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416928463440410",
+  "orderAmount": 0.05,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 44540 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 16:34:46 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 16:34:46 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.756 seconds (JVM running for 7.685)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416928463440410",
+  "orderAmount": 0.05
+}
+【微信退款】response = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416928463440410",
+  "orderAmount": 0.05
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 16:34:46 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 57564 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c86b9e3: startup date [Fri May 04 16:35:10 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd9c0b3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1644 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c86b9e3: startup date [Fri May 04 16:35:10 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.841 seconds (JVM running for 5.629)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+HHH000397: Using ASTQueryTranslatorFactory
+redirectURI:"https://open.weixin.qq.com/connect/oauth2/authorize?appid\u003dwx00d5772bc0058d9b\u0026redirect_uri\u003dhttp%3A%2F%2F7dian.nat300.top%2Fsell%2Fwechat%2Fuserinfo\u0026response_type\u003dcode\u0026scope\u003dsnsapi_userinfo\u0026state\u003dhttp%3A%2F%2Fsell.com%2F%23%2F#wechat_redirect"
+进入userinfo……
+code:011rUJic1YsMlv0Y3ikc1EoHic1rUJi0,returnUrl:http://sell.com/#/
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.1,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 payResponse={
+  "appId": "wx00d5772bc0058d9b",
+  "timeStamp": "1525423012",
+  "nonceStr": "6aBqP7jCN0yoLCrp",
+  "packAge": "prepay_id\u003dwx041636415855329246b1c72e1123580968",
+  "signType": "MD5",
+  "paySign": "4CAA224AA744C2F24416A8E8214807B3"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.1,
+  "orderId": "1525423011052491409",
+  "outTradeNo": "4200000157201805042480128669"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.1,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.1,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423240336700071",
+  "orderAmount": 0.1,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 payResponse={
+  "appId": "wx00d5772bc0058d9b",
+  "timeStamp": "1525423241",
+  "nonceStr": "9HeA6ZMFeTQsG6Qe",
+  "packAge": "prepay_id\u003dwx041640306795330f67883f310381238209",
+  "signType": "MD5",
+  "paySign": "5462D76B559AD72087C43CC469620C3E"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.1,
+  "orderId": "1525423240336700071",
+  "outTradeNo": "4200000148201805042468918735"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423240336700071",
+  "orderAmount": 0.1,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 24112 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bc9ba1d: startup date [Fri May 04 16:45:54 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66fc833f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1734 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bc9ba1d: startup date [Fri May 04 16:45:54 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 251.746 seconds (JVM running for 252.718)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 1626 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423895489154885",
+  "orderAmount": 0.02,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 payResponse={
+  "appId": "wx00d5772bc0058d9b",
+  "timeStamp": "1525423945",
+  "nonceStr": "qChMV2FLD6DiQpbe",
+  "packAge": "prepay_id\u003dwx04165211962919fbd241cc3e3911382343",
+  "signType": "MD5",
+  "paySign": "0CB44704D6E848EE1102BAC627FC17D4"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423895489154885",
+  "orderAmount": 0.02,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.02,
+  "orderId": "1525423895489154885",
+  "outTradeNo": "4200000142201805042226061331"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.02,
+  "orderId": "1525423895489154885",
+  "outTradeNo": "4200000142201805042226061331"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.02,
+  "orderId": "1525423895489154885",
+  "outTradeNo": "4200000142201805042226061331"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.02,
+  "orderId": "1525423895489154885",
+  "outTradeNo": "4200000142201805042226061331"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423895489154885",
+  "orderAmount": 0.02,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423895489154885",
+  "orderAmount": 0.02,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 39596 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c86b9e3: startup date [Fri May 04 16:57:15 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd9c0b3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1594 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c86b9e3: startup date [Fri May 04 16:57:15 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.582 seconds (JVM running for 5.387)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424276030102523",
+  "orderAmount": 0.02,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 payResponse={
+  "appId": "wx00d5772bc0058d9b",
+  "timeStamp": "1525424277",
+  "nonceStr": "54oasc5q4Knin89y",
+  "packAge": "prepay_id\u003dwx04165746635807041fc4ec343539881095",
+  "signType": "MD5",
+  "paySign": "819534C0C3EDC5DE172E43238223A08C"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.02,
+  "orderId": "1525424276030102523",
+  "outTradeNo": "4200000155201805042642428982"
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424276030102523",
+  "orderAmount": 0.02,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 38288 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c86b9e3: startup date [Fri May 04 17:06:51 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd9c0b3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1476 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c86b9e3: startup date [Fri May 04 17:06:51 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.478 seconds (JVM running for 5.281)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+【发起支付】 payResponse={
+  "appId": "wx00d5772bc0058d9b",
+  "timeStamp": "1525424859",
+  "nonceStr": "Z8vD6GHbJy5MsV9Y",
+  "packAge": "prepay_id\u003dwx04170728401515c324fb809c3128233496",
+  "signType": "MD5",
+  "paySign": "F074EB13E0030D21BE755DB3A83F8ECA"
+}
+【微信异步消息】, payResponse={
+  "orderAmount": 0.02,
+  "orderId": "1525424856398922376",
+  "outTradeNo": "4200000156201805042364485163"
+}
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02
+}
+【微信退款】response = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02
+}
+【发起支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02,
+  "orderName": "微信支付测试",
+  "openid": "oRE191if-V9zxXxnG8bFnfIV1trY"
+}
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 27836 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:12:31 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:12:31 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.755 seconds (JVM running for 7.636)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423240336700071",
+  "orderAmount": 0.1
+}
+【微信退款】response = {
+  "orderId": "1525423240336700071",
+  "orderAmount": 0.1,
+  "outTradeNo": "4200000148201805042468918735",
+  "refundId": "1525423240336700071",
+  "outRefundNo": "50000706412018050404478419520"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:12:31 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 40404 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:13:33 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:13:33 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.998 seconds (JVM running for 7.874)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02
+}
+【微信退款】response = {
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02,
+  "outTradeNo": "4200000156201805042364485163",
+  "refundId": "1525424856398922376",
+  "outRefundNo": "50000306442018050404431436778"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:13:33 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 50732 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:14:28 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:14:28 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.778 seconds (JVM running for 7.768)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02
+}
+【微信退款】response = {
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02,
+  "outTradeNo": "4200000156201805042364485163",
+  "refundId": "1525424856398922376",
+  "outRefundNo": "50000306442018050404431436778"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:14:28 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 70764 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:15:22 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:15:22 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.78 seconds (JVM running for 7.697)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02
+}
+【微信退款】response = {
+  "orderId": "1525424856398922376",
+  "orderAmount": 0.02,
+  "outTradeNo": "4200000156201805042364485163",
+  "refundId": "1525424856398922376",
+  "outRefundNo": "50000306442018050404431436778"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:15:22 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 57560 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:18:06 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:18:06 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.806 seconds (JVM running for 7.702)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525424276030102523",
+  "orderAmount": 0.03
+}
+【微信退款】response = {
+  "orderId": "1525424276030102523",
+  "orderAmount": 0.02,
+  "outTradeNo": "4200000155201805042642428982",
+  "refundId": "1525424276030102523",
+  "outRefundNo": "50000606582018050404465382500"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:18:06 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 45608 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:26:16 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:26:16 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.861 seconds (JVM running for 7.783)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423895489154885",
+  "orderAmount": 0.01
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:26:16 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 57200 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:28:49 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:28:49 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.799 seconds (JVM running for 7.702)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423895489154885",
+  "orderAmount": 0.03
+}
+【微信退款】response = {
+  "orderId": "1525423895489154885",
+  "orderAmount": 0.02,
+  "outTradeNo": "4200000142201805042226061331",
+  "refundId": "1525423895489154885",
+  "outRefundNo": "50000306612018050404441941569"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:28:49 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 32680 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:30:22 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:30:22 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.624 seconds (JVM running for 7.546)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.1
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:30:22 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 52216 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:31:24 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:31:24 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.927 seconds (JVM running for 7.813)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.5
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:31:24 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 39084 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:31:57 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:31:57 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.605 seconds (JVM running for 7.498)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.05
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:31:57 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 63700 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:32:25 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:32:25 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.719 seconds (JVM running for 7.638)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.04
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:32:25 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 12100 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:33:17 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:33:17 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 7.084 seconds (JVM running for 7.987)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.03
+}
+【微信退款】response = {
+  "orderId": "1525416800137231220",
+  "orderAmount": 0.02,
+  "outTradeNo": "4200000149201805042503640957",
+  "refundId": "1525416800137231220",
+  "outRefundNo": "50000506712018050404478229676"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:33:17 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 47500 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:34:40 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:34:40 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.855 seconds (JVM running for 7.771)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.09
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:34:40 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 52388 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:35:17 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:35:17 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.899 seconds (JVM running for 7.8)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.12
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:35:17 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 35276 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:35:45 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:35:45 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.65 seconds (JVM running for 7.56)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.11
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:35:45 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 58036 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:36:20 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:36:20 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 7.134 seconds (JVM running for 7.998)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.1
+}
+【微信退款】response = {
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.1,
+  "outTradeNo": "4200000157201805042480128669",
+  "refundId": "1525423011052491409",
+  "outRefundNo": "50000506422018050404478229899"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:36:20 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 30204 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:37:17 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:37:17 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.786 seconds (JVM running for 7.801)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.1
+}
+【微信退款】response = {
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.1,
+  "outTradeNo": "4200000157201805042480128669",
+  "refundId": "1525423011052491409",
+  "outRefundNo": "50000506422018050404478229899"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:37:17 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on 5HVJYPAN9TYFD4L with PID 49224 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:37:41 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$794490ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:37:41 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/wechat/userinfo],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.tianye.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.tianye.sell.controller.WechatPayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.tianye.sell.controller.WeixinController.auth(java.lang.String,java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.718 seconds (JVM running for 7.631)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525423011052491409",
+  "orderAmount": 0.11
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@127a7a2e: startup date [Fri May 04 17:37:41 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'

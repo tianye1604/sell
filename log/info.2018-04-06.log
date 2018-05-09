@@ -1,0 +1,420 @@
+Starting OrderServiceImplTest on 5HVJYPAN9TYFD4L with PID 19708 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Fri Apr 06 00:10:50 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94d38d2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Fri Apr 06 00:10:50 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.821 seconds (JVM running for 7.766)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Fri Apr 06 00:10:50 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 86152 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Fri Apr 06 00:12:35 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1ae14b2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1462 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Fri Apr 06 00:12:35 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.153 seconds (JVM running for 5.14)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 90360 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1522d8a0: startup date [Fri Apr 06 00:14:51 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$640dca8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1636 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1522d8a0: startup date [Fri Apr 06 00:14:51 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.085 seconds (JVM running for 6.388)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 57080 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Fri Apr 06 00:25:59 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d725ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1716 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Fri Apr 06 00:25:59 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.308 seconds (JVM running for 5.402)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting OrderServiceImplTest on 5HVJYPAN9TYFD4L with PID 72880 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:13:36 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b29c1ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:13:36 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.813 seconds (JVM running for 7.679)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:13:36 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on 5HVJYPAN9TYFD4L with PID 49668 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:15:35 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b29c1ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:15:35 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.738 seconds (JVM running for 7.64)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:15:35 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on 5HVJYPAN9TYFD4L with PID 56428 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:17:09 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b29c1ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:17:09 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.653 seconds (JVM running for 7.572)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:17:09 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on 5HVJYPAN9TYFD4L with PID 130260 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:18:03 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b29c1ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:18:03 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.935 seconds (JVM running for 7.811)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:18:03 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on 5HVJYPAN9TYFD4L with PID 75600 (started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:19:11 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b29c1ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:19:11 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail()
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.751 seconds (JVM running for 7.773)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5f77d0f9: startup date [Fri Apr 06 01:19:11 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 29304 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Fri Apr 06 10:39:30 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$593dc013] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1535 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Fri Apr 06 10:39:30 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel()
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.07 seconds (JVM running for 5.025)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 5HVJYPAN9TYFD4L with PID 58840 (E:\ideaWorkspaces\dev\java\imooc\sell\target\classes started by Administrator in E:\ideaWorkspaces\dev\java\imooc\sell)
+The following profiles are active: dev
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Fri Apr 06 11:51:19 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.2.4.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b6137272] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.5
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1451 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Fri Apr 06 11:51:19 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.tianye.sell.controller.BuyerOrderController.create(com.tianye.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO<com.tianye.sell.dto.OrderDTO> com.tianye.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.tianye.sell.VO.ResultVO com.tianye.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.096 seconds (JVM running for 5.108)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+HHH000397: Using ASTQueryTranslatorFactory
