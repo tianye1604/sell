@@ -16,6 +16,7 @@ public enum ResultEnum {
     PRODUCT_UP_SUCCESS(3, "商品上架成功"),
     PRODUCT_DOWN_SUCCESS(4, "商品下架成功"),
     PRODUCT_SAVE_SUCCESS(5, "商品信息更新成功"),
+    CATEGORY_SAVE_SUCCESS(5, "商品类目更新成功"),
 
     PRODUCT_NOT_EXIST(100,"商品信息不存在"),
     PRODUCT_STOCK_ERROR(101,"商品库存不正确"),
