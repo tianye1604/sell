@@ -16,9 +16,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,7 +41,7 @@ public class BuyerOrderController {
 
     //创建订单
     @PostMapping("/create")
-    public ResultVO<Map<String, String>> create(@Validated OrderForm orderForm,
+    public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
                                                 BindingResult bindingResult) {
         //校验参数
         if(bindingResult.hasErrors()){

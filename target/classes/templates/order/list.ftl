@@ -3,11 +3,11 @@
 <body>
 <div id="wrapper" class="toggled">
 
-    <#--边栏sidebar-->
+<#--边栏sidebar-->
     <#include "../common/nav.ftl">
 
 
-    <#--主要内容content-->
+<#--主要内容content-->
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row clearfix">
@@ -56,7 +56,7 @@
                 <div class="col-md-12 column">
                     <ul class="pagination pull-right">
                         <#if currentPage lte 1>
-                            <li  class="disabled"><a href="#">上一页</a></li>
+                            <li class="disabled"><a href="#">上一页</a></li>
                         <#else>
                             <li><a href="/sell/seller/order/list?page=${currentPage-1}">上一页</a></li>
                         </#if>
@@ -68,7 +68,7 @@
                             </#if>
                         </#list>
                         <#if currentPage gte orderDTOPage.getTotalPages()>
-                            <li  class="disabled"><a href="#">下一页</a></li>
+                            <li class="disabled"><a href="#">下一页</a></li>
                         <#else>
                             <li><a href="/sell/seller/order/list?page=${currentPage+1}">下一页</a></li>
                         </#if>
