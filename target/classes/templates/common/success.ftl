@@ -14,7 +14,7 @@
                 <h4>
                     成功!
                 </h4> <strong>${msg}!</strong>
-                <a href="/sell/seller/order/list" class="alert-link">3秒后自动返回</a>
+                <a href="${url}" class="alert-link">3秒后自动返回</a>
             </div>
         </div>
     </div>
@@ -22,7 +22,7 @@
 </body>
 <script>
     setTimeout(function () {
-        location.href = "/sell/seller/order/list";
+        location.href = "${url}";
     },3000);
 </script>
 </html>

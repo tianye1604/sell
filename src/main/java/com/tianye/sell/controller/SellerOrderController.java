@@ -65,6 +65,7 @@ public class SellerOrderController {
         }catch (SellException e) {
             log.error("【卖家订单详情】异常信息，{}",e.getMessage());
             map.put("msg",e.getMessage());
+            map.put("url", "/sell/seller/order/list");
             return new ModelAndView("common/error",map);
         }
         return new ModelAndView("order/detail",map);
@@ -86,8 +87,10 @@ public class SellerOrderController {
         }catch (SellException e) {
             log.error("【卖家取消订单】异常信息，{}",e.getMessage());
             map.put("msg",e.getMessage());
+            map.put("url", "/sell/seller/order/list");
             return new ModelAndView("common/error",map);
         }
+        map.put("url", "/sell/seller/order/list");
         map.put("msg", ResultEnum.ORDER_CANCEL_SUCCESS.getMessage());
         return new ModelAndView("common/success",map);
     }
@@ -108,8 +111,10 @@ public class SellerOrderController {
         }catch (SellException e) {
             log.error("【卖家完结订单】异常信息，{}",e.getMessage());
             map.put("msg",e.getMessage());
+            map.put("url", "/sell/seller/order/list");
             return new ModelAndView("common/error",map);
         }
+        map.put("url", "/sell/seller/order/list");
         map.put("msg", ResultEnum.ORDER_FINISH_SUCCESS.getMessage());
         return new ModelAndView("common/success",map);
     }

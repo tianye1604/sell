@@ -13,6 +13,8 @@ public enum ResultEnum {
     SUCCESS(0,"成功"),
     ORDER_CANCEL_SUCCESS(1,"订单取消成功"),
     ORDER_FINISH_SUCCESS(2,"订单完结成功"),
+    PRODUCT_UP_SUCCESS(3, "商品上架成功"),
+    PRODUCT_DOWN_SUCCESS(4, "商品下架成功"),
 
     PRODUCT_NOT_EXIST(100,"商品信息不存在"),
     PRODUCT_STOCK_ERROR(101,"商品库存不正确"),
@@ -28,7 +30,9 @@ public enum ResultEnum {
     ORDER_OWNER_ERROR(111,"该订单openid不存在"),
     WECHAT_AUTH_ERROR(112,"微信网页授权错误"),
     WXPAY_MONEY_VALIDATE_ERROR(113,"异步信息金额与系统金额不匹配"),
-
+    PRODUCT_STATUS_ERROR(114, "商品状态不正确"),
+    PRODUCT_UP_ERROR(115, "商品上架失败"),
+    PRODUCT_DOWN_ERROR(116, "商品下架失败"),
 
     ;
 

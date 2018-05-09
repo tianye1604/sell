@@ -85,5 +85,44 @@ public class ProductServiceImpl implements ProductService {
         }
     }
 
+    @Override
+    @Transactional
+    public ProductInfo offSale(String productId) {
+        ProductInfo productInfo = repository.findOne(productId);
+
+        if (productInfo == null) {
+            log.error("【商品下架】商品信息不存在，productId:{}", productId);
+            throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+        }
+
+        if (productInfo.getProductStatus().equals(ProductStatusEnum.DOWN)) {
+            log.error("【商品下架】商品状态不正确,productStatus={}", productInfo.getProductStatusEnum().getMessage());
+            throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+        }
+
+        //更新
+        productInfo.setProductStatus(ProductStatusEnum.DOWN.getCode());
+        return repository.save(productInfo);
+    }
+
+    @Override
+    public ProductInfo onSale(String productId) {
+        ProductInfo productInfo = repository.findOne(productId);
+
+        if (productInfo == null) {
+            log.error("【商品上架】商品信息不存在，productId:{}", productId);
+            throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+        }
+
+        if (productInfo.getProductStatus().equals(ProductStatusEnum.UP)) {
+            log.error("【商品上架】商品状态不正确,productStatus={}", productInfo.getProductStatusEnum().getMessage());
+            throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+        }
+
+        //更新
+        productInfo.setProductStatus(ProductStatusEnum.UP.getCode());
+        return repository.save(productInfo);
+    }
+
 
 }

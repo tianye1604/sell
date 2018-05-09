@@ -1,10 +1,13 @@
 package com.tianye.sell.dataobject;
 
+import com.tianye.sell.enums.ProductStatusEnum;
+import com.tianye.sell.utils.EnumUtil;
 import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
 * @Author:tianye
@@ -39,6 +42,12 @@ public class ProductInfo {
     /** 商品类目编号 */
     private Integer categoryType;
 
+    private Date createTime;
 
+    private Date updateTime;
+
+    public ProductStatusEnum getProductStatusEnum() {
+        return EnumUtil.getEnumBycode(productStatus, ProductStatusEnum.class);
+    }
 
 }
