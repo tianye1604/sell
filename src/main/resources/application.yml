@@ -10,11 +10,14 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.3.56
+    port: 6379
+
 server:
   context-path: /sell
-
-jackson:
-    default-property-inclusion: non_null
 
 wechat:
   mpAppId: wx00d5772bc0058d9b
@@ -23,3 +26,8 @@ wechat:
   mchKey: 4ecdb062b1c34de3afd2a8d096ee2845
   keyPath: E:/ideaWorkspaces/dev/java/imooc/sell/src/main/resources/static/cert/apiclient_cert.p12
   notifyUrl: http://7dian.nat300.top/sell/pay/notify
+
+projectUrl:
+  wechatMpAuthorize: http://7dian.nat300.top
+  wechatOpenAuthorize: http://7dian.nat300.top
+  sell: http://7dian.nat300.top
