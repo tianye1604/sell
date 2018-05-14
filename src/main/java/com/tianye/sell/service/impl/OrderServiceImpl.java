@@ -15,7 +15,9 @@ import com.tianye.sell.repository.OrderMasterRepository;
 import com.tianye.sell.service.OrderService;
 import com.tianye.sell.service.PayService;
 import com.tianye.sell.service.ProductService;
+import com.tianye.sell.service.PushMessageService;
 import com.tianye.sell.utils.KeyUtil;
+import com.tianye.sell.websocket.WebSocket;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,6 +53,12 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private PayService payService;
+
+    @Autowired
+    private WebSocket webSocket;
+
+    @Autowired
+    private PushMessageService pushMessageService;
 
     @Override
     @Transactional
@@ -96,6 +104,9 @@ public class OrderServiceImpl implements OrderService {
                 new CartDTO(e.getProductId(),e.getProductQuantity()))
                 .collect(Collectors.toList());
         productService.decreaseStock(cartDTOList);
+
+        //发送websocket消息
+        webSocket.sendMessage(orderDTO.getOrderId());
 
         return orderDTO;
     }
@@ -211,6 +222,10 @@ public class OrderServiceImpl implements OrderService {
             log.error("【订单支付完成】更新失败，orderMaster = {}", orderMaster);
             throw new SellException(ResultEnum.ORDER_UPDATE_FAIL);
         }
+
+        //发送微信消息
+        pushMessageService.orderStatus(orderDTO);
+
         return orderDTO;
     }
 }

@@ -99,6 +99,9 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-freemarker:1.4.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.25-incubating" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-websocket:1.4.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-websocket:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.39" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.10" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.5" level="project" />

@@ -69,4 +69,17 @@ public class OrderDTO {
         return EnumUtil.getEnumBycode(payStatus,PayStatusEnum.class);
 
     }
+
+    @JsonIgnore
+    public String getOrderDetail() {
+        StringBuffer orders = new StringBuffer();
+
+        for (OrderDetail order : orderDetailList) {
+            orders.append(order.getProductName());
+            orders.append(" * ");
+            orders.append(order.getProductQuantity());
+            orders.append("份\n");
+        }
+        return orders.toString();
+    }
 }
