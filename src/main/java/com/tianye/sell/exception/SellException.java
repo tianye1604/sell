@@ -1,12 +1,15 @@
 package com.tianye.sell.exception;
 
 import com.tianye.sell.enums.ResultEnum;
+import lombok.Getter;
+
 /**
 * @Author:tianye
 * @Description:
 * @Date: 16:40 2018/4/4/004
 */
 
+@Getter
 public class SellException extends RuntimeException {
 
     private Integer code;

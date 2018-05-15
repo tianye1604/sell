@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f743d09e-a679-444c-8377-ff85f9e01bb9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tianye/sell/config/WechatOpenConfig.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianye/sell/config/WechatAccountConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/tianye/sell/config/WechatAccountConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianye/sell/controller/SellerUserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tianye/sell/controller/SellerUserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianye/sell/controller/WechatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tianye/sell/controller/WechatController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianye/sell/exception/SellException.java" afterPath="$PROJECT_DIR$/src/main/java/com/tianye/sell/exception/SellException.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tianye/sell/handler/SellerExceptionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/tianye/sell/handler/SellerExceptionHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="$PROJECT_DIR$/target/classes/application.yml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianye/sell/config/WechatAccountConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/tianye/sell/config/WechatAccountConfig.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianye/sell/controller/WechatController.class" afterPath="$PROJECT_DIR$/target/classes/com/tianye/sell/controller/WechatController.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,14 +53,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SellerUserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SellerUserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/controller/SellerUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1069">
-              <caret line="51" column="51" lean-forward="false" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+            <state relative-caret-position="553">
+              <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
               <folding>
-                <element signature="e#2987#2988#0" expanded="true" />
-                <element signature="e#3042#3043#0" expanded="true" />
+                <element signature="e#2988#2989#0" expanded="true" />
+                <element signature="e#3043#3044#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,12 +80,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SellerExceptionHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SellerExceptionHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/handler/SellerExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="557">
+              <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+              <folding>
+                <element signature="e#1944#1945#0" expanded="true" />
+                <element signature="e#2013#2014#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/exception/SellException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/config/WechatOpenConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="317">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/succuss.ftl" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/common/header.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" />
@@ -235,9 +248,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tianye/sell/config/WechatAccountConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tianye/sell/config/WechatOpenConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tianye/sell/controller/WechatController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tianye/sell/handler/SellerExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tianye/sell/controller/SellerUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tianye/sell/exception/SellException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tianye/sell/handler/SellerExceptionHandler.java" />
       </list>
     </option>
   </component>
@@ -270,9 +284,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="960" />
     <option name="width" value="976" />
-    <option name="height" value="1030" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -764,7 +778,7 @@
       <workItem from="1525926693468" duration="20545000" />
       <workItem from="1526097383883" duration="7038000" />
       <workItem from="1526269878233" duration="5541000" />
-      <workItem from="1526286490194" duration="10775000" />
+      <workItem from="1526286490194" duration="11996000" />
     </task>
     <task id="LOCAL-00001" summary="添加忽略文件">
       <created>1525833330498</created>
@@ -808,7 +822,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526291640943</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="卖家端微信扫码登录功能实现">
+      <created>1526347594294</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526347594294</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -844,7 +865,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211525000" />
+    <option name="totallyTimeSpent" value="212746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -878,7 +899,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3642704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35675967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -945,7 +966,8 @@
     <MESSAGE value="卖家端商品类目信息新增、修改功能实现" />
     <MESSAGE value="卖家端登录，登出功能实现，并实现登录信息校验功能" />
     <MESSAGE value="卖家端新下单消息提醒websocket,微信模板消息推送实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="卖家端新下单消息提醒websocket,微信模板消息推送实现" />
+    <MESSAGE value="卖家端微信扫码登录功能实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="卖家端微信扫码登录功能实现" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1003,13 +1025,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/constant/CookieConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/constant/RedisConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1051,13 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/exception/SellException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1379,18 +1387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/handler/SellerExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/config/WechatOpenConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1399,11 +1399,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/controller/SellerUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1069">
-          <caret line="51" column="51" lean-forward="false" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+        <state relative-caret-position="553">
+          <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
           <folding>
-            <element signature="e#2987#2988#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#2988#2989#0" expanded="true" />
+            <element signature="e#3043#3044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.3.RELEASE/spring-web-4.3.3.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/exception/SellException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tianye/sell/handler/SellerExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+          <folding>
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
           </folding>
         </state>
       </provider>
