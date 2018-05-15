@@ -28,15 +28,17 @@ public class SellerExceptionHandler {
     public ModelAndView handlerAuthorizeException() {
         Map<String, Object> map = new HashMap<>();
         map.put("msg", ResultEnum.TOKEN_INVALID.getMessage());
-        map.put("url", "/sell/seller/toLogin");
-
+        String url = new StringBuffer()
+//                .append("redirect:")
+                .append(projectUrlConfig.getWechatOpenAuthorize())
+                .append("/sell/wechat/qrAuthorize")
+//                .append("/{oTgZpwXfKQA2q8Ysknz8_RRglO3A}")
+                .append("?returnUrl=")
+                .append(projectUrlConfig.getSell())
+                .append("/sell/seller/login")
+                .toString();
+        map.put("url", url);
+//        map.put("url", "/sell/seller/toLogin");
         return new ModelAndView("common/error", map);
-
-//        return new ModelAndView("redirect:"
-////        .concat(projectUrlConfig.getWechatOpenAuthorize())
-////        .concat("/sell/seller/product/list")
-////        .concat("?returnUrl=")
-//        .concat(projectUrlConfig.getSell())
-//        .concat("/sell/seller/toLogin"));
     }
 }

@@ -47,6 +47,16 @@ public class WechatAccountConfig {
     private String notifyUrl;
 
     /**
+     * 开放平台id
+     */
+    private String openAppId;
+
+    /**
+     * 开发平台秘钥
+     */
+    private String openAppSecret;
+
+    /**
      * 微信消息模板id
      */
     private Map<String, String> templateId;

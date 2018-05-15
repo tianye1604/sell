@@ -1,6 +1,7 @@
 package com.tianye.sell.controller;
 
 import com.lly835.bestpay.utils.JsonUtil;
+import com.tianye.sell.config.ProjectUrlConfig;
 import com.tianye.sell.enums.ResultEnum;
 import com.tianye.sell.exception.SellException;
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +30,12 @@ public class WechatController {
     @Autowired
     private WxMpService wxMpService;
 
+    @Autowired
+    private ProjectUrlConfig projectUrlConfig;
+
+    @Autowired
+    private WxMpService wxOpenService;
+
     @GetMapping("/authorize")
     public String authorize(@RequestParam("returnUrl") String returnUrl){
         String url = "http://7dian.nat300.top/sell/wechat/userinfo";
@@ -54,5 +61,31 @@ public class WechatController {
         String openId = wxMpOAuth2AccessToken.getOpenId();
 
         return "redirect:" + returnUrl + "?openid=" +openId;
+    }
+
+    @GetMapping("/qrAuthorize")
+    public String qrAuthorize(@RequestParam("returnUrl") String returnUrl) {
+        String url = projectUrlConfig.getWechatOpenAuthorize() + "/sell/wechat/qrUserInfo";
+        String redirectUrl = wxOpenService.buildQrConnectUrl(url,
+                WxConsts.QrConnectScope.SNSAPI_LOGIN,
+                URLEncoder.encode(returnUrl));
+        return "redirect:" + redirectUrl;
+    }
+
+    @GetMapping("/qrUserInfo")
+    public String qrUserInfo(@RequestParam("code") String code,
+                             @RequestParam("state") String returnUrl) {
+        log.info("code:{},returnUrl:{}", code, returnUrl);
+        WxMpOAuth2AccessToken wxMpOAuth2AccessToken = new WxMpOAuth2AccessToken();
+        try {
+            wxMpOAuth2AccessToken = wxMpService.oauth2getAccessToken(code);
+        } catch (WxErrorException e) {
+            log.error("【微信开放平台登录】失败：{}", e);
+            throw new SellException(ResultEnum.WECHAT_AUTH_ERROR.getCode(), e.getMessage());
+        }
+        log.info("wxMpOAuth2AcessToken={}", wxMpOAuth2AccessToken);
+        String openId = wxMpOAuth2AccessToken.getOpenId();
+
+        return "redirect:" + returnUrl + "?openid=" + openId;
     }
 }

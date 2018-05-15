@@ -45,9 +45,11 @@ public class SellerUserController {
 
         //1. 验证openid，是否与数据库内数据匹配
         SellerInfo sellerInfo = sellerService.findSellerInfoByOpenid(openid);
+        log.info("【卖家端登录】openid={}", openid);
         if (sellerInfo == null) {
             map.put("msg", ResultEnum.LOGIN_FAIL.getMessage());
             map.put("url", "/sell/seller/toLogin");
+//            map.put("url", "/sell/seller/order/list");
             return new ModelAndView("common/error", map);
         }
 

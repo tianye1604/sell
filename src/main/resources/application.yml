@@ -26,12 +26,15 @@ wechat:
   mchKey: 4ecdb062b1c34de3afd2a8d096ee2845
   keyPath: E:/ideaWorkspaces/dev/java/imooc/sell/src/main/resources/static/cert/apiclient_cert.p12
   notifyUrl: http://7dian.nat300.top/sell/pay/notify
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
   templateId:
-    orderStatus: Vlxxs40bfp0o5xxg98ky1EnCZpWYpk4AP1DdWmy8_dc
+    orderStatus: _eWrenS5n6iOOHNqUMTpAsxDijuXeaAlSZHkh42mJfs
 
 
 
 projectUrl:
   wechatMpAuthorize: http://7dian.nat300.top
-  wechatOpenAuthorize: http://7dian.nat300.top
+ # wechatOpenAuthorize: http://7dian.nat300.top
+  wechatOpenAuthorize: http://sell.springboot.cn
   sell: http://7dian.nat300.top
