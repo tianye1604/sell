@@ -1,6 +1,7 @@
 package com.tianye.sell.service.impl;
 
 import com.tianye.sell.dataobject.ProductCategory;
+import com.tianye.sell.dataobject.dao.ProductCategoryDao;
 import com.tianye.sell.repository.ProductCategoryRepositroy;
 import com.tianye.sell.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,9 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
     private ProductCategoryRepositroy repositroy;
+
+    @Autowired
+    private ProductCategoryDao productCategoryDao;
 
     @Override
     public ProductCategory findOne(Integer categoryId) {
@@ -39,4 +43,11 @@ public class CategoryServiceImpl implements CategoryService {
     public ProductCategory save(ProductCategory productCategory) {
         return repositroy.save(productCategory);
     }
+
+    @Override
+    public ProductCategory selectByCategoryType(Integer categoryType) {
+        return productCategoryDao.selectByCategoryType(categoryType);
+    }
+
+
 }

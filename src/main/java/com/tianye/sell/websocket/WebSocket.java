@@ -7,7 +7,6 @@ import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
-import javax.websocket.server.ServerEndpoint;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
@@ -15,8 +14,10 @@ import java.util.concurrent.CopyOnWriteArraySet;
  * @Description:
  * @Date: 13:22 2018/5/12/012
  */
+
+
+//@ServerEndpoint(value = "/websocket",configurator = SpringConfigurator.class)
 @Component
-@ServerEndpoint("/webSocket")
 @Slf4j
 public class WebSocket {
 

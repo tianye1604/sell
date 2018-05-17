@@ -24,27 +24,33 @@ public class CategoryServiceImplTest {
     private CategoryServiceImpl categoryService;
 
     @Test
-    public void findOne() throws Exception{
+    public void findOne() {
         ProductCategory productCategory = categoryService.findOne(1);
         Assert.assertEquals(new Integer(1),productCategory.getCategoryId());
     }
 
     @Test
-    public void findAll() throws Exception {
+    public void findAll() {
         List<ProductCategory> categoryList = categoryService.findAll();
         Assert.assertNotEquals(0,categoryList.size());
     }
 
     @Test
-    public void save() throws Exception {
+    public void save() {
         ProductCategory productCategory = new ProductCategory("男生专享", 1);
         ProductCategory result  = categoryService.save(productCategory);
         Assert.assertNotNull(result);
     }
 
     @Test
-    public void findByCategoryTypeIn() throws Exception {
+    public void findByCategoryTypeIn() {
         List<ProductCategory> categoryList = categoryService.findByCategoryTypeIn(Arrays.asList(1,2,3,4));
         Assert.assertNotEquals(0,categoryList.size());
+    }
+
+    @Test
+    public void selectByCategoryType() {
+        ProductCategory result = categoryService.selectByCategoryType(112);
+        Assert.assertEquals("", result.getCategoryType());
     }
 }

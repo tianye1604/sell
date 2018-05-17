@@ -22,4 +22,6 @@ public interface CategoryService {
 
     ProductCategory save(ProductCategory productCategory);
 
+    ProductCategory selectByCategoryType(Integer categoryType);
+
 }
