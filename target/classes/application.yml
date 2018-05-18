@@ -38,3 +38,7 @@ projectUrl:
  # wechatOpenAuthorize: http://7dian.nat300.top
   wechatOpenAuthorize: http://sell.springboot.cn
   sell: http://7dian.nat300.top
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
