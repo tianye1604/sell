@@ -5,12 +5,16 @@ import com.tianye.sell.dataobject.dao.ProductCategoryDao;
 import com.tianye.sell.repository.ProductCategoryRepositroy;
 import com.tianye.sell.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
 
 @Service
+@CacheConfig(cacheNames = "productCategory")
 public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
@@ -20,6 +24,7 @@ public class CategoryServiceImpl implements CategoryService {
     private ProductCategoryDao productCategoryDao;
 
     @Override
+    @Cacheable(key = "#categoryId")
     public ProductCategory findOne(Integer categoryId) {
         return repositroy.findOne(categoryId);
     }
@@ -40,6 +45,7 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
+    @CachePut(key = "#productCategory.categoryId")
     public ProductCategory save(ProductCategory productCategory) {
         return repositroy.save(productCategory);
     }

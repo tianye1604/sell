@@ -2,13 +2,17 @@ package com.tianye.sell.VO;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
 * @Author:tianye
 * @Description: 返回结果
 * @Date: 15:06 2018/4/3/003
 */
 @Data
-public class ResultVO<T> {
+public class ResultVO<T> implements Serializable {
+
+    private static final long serialVersionUID = -4074708848156578284L;
 
     private Integer code;
 

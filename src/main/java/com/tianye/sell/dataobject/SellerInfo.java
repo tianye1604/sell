@@ -5,6 +5,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * @Author:tianye
@@ -15,8 +16,10 @@ import javax.persistence.Id;
 @Data
 @Entity
 @DynamicUpdate
-public class SellerInfo {
+public class SellerInfo implements Serializable {
 
+
+    private static final long serialVersionUID = 769773661591342156L;
     @Id
     private String id;
 
